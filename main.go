@@ -30,7 +30,7 @@ func httpGet(url *string, worker int) {
 	resp, err := http.Get(*url)
 
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
 
 	defer resp.Body.Close()
