@@ -31,6 +31,7 @@ func httpGet(url *string, worker int) {
 
 	if err != nil {
 		log.Println(err)
+		return
 	}
 
 	defer resp.Body.Close()
